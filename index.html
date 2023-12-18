@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Coding Quiz Challenge 4</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav>
+    <a class= "navButton" href="">High Scores</a>
+    <a id="countdown" class= "timerNav" href="">Timer:</a>
+  </nav>
+  <div class="container">
+    <!-- Why isn't the high score calculating in the final page?-->
+    <div id="highScores" style="display: none;">
+      <h2>High Scores</h2>
+      <ul id="scoresList"></ul>
+    </div>
+    <h1>Coding Quiz Challenge</h1>
+    <h2>Try to answer the following code-related question within the time limit.
+        Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+    </h2>
+    <button id="startButton">Start Quiz</button>
+    <div id="quizContainer">
+      <p id="question"></p>
+      <ul id="options"></ul>
+      <div id="feedback"></div>
+          <button id="nextButton">Next</button>
+    </div>
+    <div id="resultContainer" style="display: none;">
+      <h2>Quiz Results</h2>
+      <p>Your score: <span id="score"></span></p>
+      <label for="initials">Enter Your Initials:</label>
+      <input type="text" id="initials">
+      <button id="submitScore">Submit</button>
+    
+    </div>
+  </div>
+<script src="assets/script.js"></script>
+</body>
+</html>
